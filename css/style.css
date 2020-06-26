@@ -2,10 +2,60 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+ }
+
 
 .container {
+  margin:50px;
+  width: 930px;
+  height: 780px;
+  border: 2px solid #000;
+
+}
+
+.box {
+  width: 300px;
   height: 372px;
-  width: 900px;
-  border: 1px solid #000;
+  border: 1px solid grey;
+  position: relative;
+  display: inline-block;
+}
+
+
+ .discount {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  background-color: green;
+  text-align: center;
+ }
+
+ .chip {
+ position: absolute;
+ width: 35px;
+ height: 35px;
+ line-height: 35px;
+ top: 0;
+ right: 0;
+ border-radius: 100%;
+ background-color: red;
+ text-align: center;
+}
+
+  .cuore {
+  position: absolute;
+  bottom: 0;
+  right:150px;
+  font-size: 30px;
+  color:red;
+  display: none;
+}
+
+
+.box:hover > .cuore {
+display: block;
 }
